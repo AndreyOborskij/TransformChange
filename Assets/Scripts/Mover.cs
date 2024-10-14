@@ -2,12 +2,10 @@ using UnityEngine;
 
 public class Mover : MonoBehaviour
 {
-    [SerializeField] private float _speed;
+     [SerializeField] private Vector3 _speedDirection;
 
-    private void Update()
-    {
-        var newPosition = transform.position;
-        newPosition.z += _speed;
-        transform.position = newPosition;
-    }
+     void Update()
+     {
+         transform.position += _speedDirection;
+     }
 }
