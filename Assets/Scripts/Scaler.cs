@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Growth : MonoBehaviour
+public class Scaler : MonoBehaviour
 {
     [SerializeField] private Vector3 _growthSpeed;
 
